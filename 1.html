@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+
+window.onload=function(){
+var emp_name=['ram','vishal','kartik','rani','kalai','vishnu','priya','sita','sera','john','mani'];
+document.getElementById('ques').innerHTML=emp_name;
+for(var r=0;r<emp_name.length; r=r+2)
+{
+var dd = document.getElementById('result');
+dd.innerHTML+=emp_name[r]+"<br/>";
+}
+}
+
+</script>
+</head>
+<body>
+Employee name Array :<span id="ques" ></span><br/>
+
+Alternate Names :<br/><b><span id="result" ></span></b>
+</body>
+</html>

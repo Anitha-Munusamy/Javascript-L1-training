@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="arrops.js"></script>
+<script>
+window.onload=function(){
+var arraye=[1,2,3,4,5,6,7];
+var rever=arrayReverse(arraye);
+var size=arraySize(arraye)
+var doc=document.getElementById('result');
+var doc1=document.getElementById("size");
+var doc2=document.getElementById("ques");
+doc.innerHTML=rever;
+doc1.innerHTML=size;
+doc2.innerHTML=arraye;
+
+}
+
+</script>
+</head>
+<body>
+Given Array: <span id="ques"></span><br/>
+Array in Reverse : <span id="result" ></span><br/>
+Array Size: <span id="size"></span>
+</body>
+</html>

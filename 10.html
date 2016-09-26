@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="arrops.js"></script>
+<script>
+window.onload=function(){
+
+document.getElementById('setbg').addEventListener('click',function(){
+var a =document.getElementById("nametxt").value;
+document.body.style.backgroundColor=a;
+},true);
+
+
+
+}
+
+</script>
+</head>
+<body style="background-color:#fff;">
+Enter your favorite:<input type="text" id="nametxt"/><br/><br/>
+<button id="setbg">Submit</button>
+</body>
+</html>

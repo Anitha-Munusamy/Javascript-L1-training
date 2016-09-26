@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+var obj={
+'name':'aaa',
+'puplisher':'pearson',
+'price':'200'
+};
+window.onload=function(){
+
+document.getElementById('nametxt').value=obj.name;
+document.getElementById('pubtxt').value=obj.puplisher;
+document.getElementById('finalprice').value=(Number(obj.price)+((Number(obj.price)*10)/100)+((Number(obj.price)*3)/100));
+
+}
+
+</script>
+
+
+
+</head>
+<body>
+
+CD Name:<input type="text" id="nametxt"/><br/><br/>
+CD Publisher:<input type="text" id="pubtxt"/><br/><br/>
+CD Final Price:<input type="text" id="finalprice"/>
+
+</body>
+</html>

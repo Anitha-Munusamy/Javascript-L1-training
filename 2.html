@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+
+window.onload=function(){
+var marks=[25,54,89,94,51,53,67,65,100];
+document.getElementById('ques').innerHTML=marks;
+var total=0;
+for(var r=0;r<marks.length; r++)
+{
+total+=marks[r];
+
+}
+var avg=total/10;
+
+var dd = document.getElementById('result');
+dd.innerHTML=avg+"<br/>";
+}
+
+</script>
+</head>
+<body>
+Mark Array:<span id="ques" ></span><br/>
+
+Average :<br/><b><span id="result" ></span></b>
+</body>
+</html>

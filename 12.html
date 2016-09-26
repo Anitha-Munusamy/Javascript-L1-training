@@ -1,0 +1,171 @@
+<html>
+ 
+<head>
+ 
+<title>Reservation Form</title>
+ 
+<script type="text/javascript">
+ 
+<!--
+     window.onload=function(){
+	 document.getElementById('submit').addEventListener('click',function(){
+
+
+ 
+    
+ 
+if ( !isFutureDate(document.emp.txtdate.value))
+{
+alert ("Enter Future date" );
+return false;
+}
+
+if ( document.emp.emp_name.value == "" )
+{
+alert ( "Please fill in the 'Your Employee Name' box." );
+return false;
+}
+if ( document.emp.num.value == "" )
+{
+alert ( "Enter  Number of Passenger" );
+return false;
+}
+alert("sucessfully Submitted");
+return true;
+ 
+ 
+
+if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(document.emp.email_id.value))  
+  {  
+    alert("You have entered an invalid email address!")  
+    return (false)   
+  }  
+ 
+            
+
+ 
+ 
+
+ 
+ });
+	
+
+	   
+	    function isFutureDate(idate){
+var today = new Date().getTime(),
+    idate = idate.split("/");
+
+idate = new Date(idate[2], idate[1] - 1, idate[0]).getTime();
+return (today - idate) < 0 ? true : false;
+}
+ }
+ 	function isNumberKey(evt)
+		{
+		var charCode = (evt.which) ? evt.which : event.keyCode;
+		if (charCode != 46 && charCode > 31 
+		&& (charCode < 48 || charCode > 57))
+		{alert("Enter Number");             
+		return false;
+		}
+		return true;
+		}
+//-->
+ 
+</script>
+ 
+</head>
+ 
+<body bgcolor="#FFFFFF">
+<form name="emp" action="" onsubmit="return validate_form();" method="post">
+<table align="center" width=40% width="100%" cellspacing="2" cellpadding="2" border="5">
+    <tr>
+        <td colspan="2" align="center"><b>Railway Reservation Form.</b></td>
+        
+    </tr>
+    <tr>
+        <td align="left" valign="top" width="41%">Passenger Name<span style="color:red">*</span></td>
+ 
+        <td width="57%"><input type="text" value="" name="emp_name" size="24"></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" width="41%">Total Number of Passenger<span style="color:red">*</span></td>
+        <td width="57%">
+        <input type="text" value="" name="num" onkeypress="return isNumberKey(event)"  size="24"></td>
+    </tr>
+<tr>
+        <td align="left" valign="top" width="41%">Address</td>
+ 
+        <td width="57%"><textarea rows="4" maxlen="200" name="S2" cols="20"></textarea></td>
+    </tr
+    <tr >
+ 
+        <td align="left" valign="top" width="41%">Contact Number</td>
+        <td width="57%">
+        <input type="text" value="" onkeypress="return isNumberKey(event)" name="txtFName1" size="24"></td>
+    </tr>
+    <tr >
+        <td align="left" valign="top" width="41%">From</td>
+        <td width="57%"><select name="mydropdown">
+<option value="Default">Default</option>
+<option value="Chennai">Chennai</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Chennai">Pune</option>
+<option value="Bangalore">Mysore</option>
+<option value="Chennai">Chandigarh</option>
+ 
+</select></td>     
+</tr>  
+<tr>
+ <td align="left" valign="top" width="41%">To</td>
+        <td width="57%"><select name="mydropdown">
+<option value="Default">Default</option>
+<option value="Chennai">Chennai</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Chennai">Pune</option>
+<option value="Bangalore">Mysore</option>
+<option value="Chennai">Chandigarh</option>
+ 
+</select></td>
+        
+ 
+    </tr>
+ <tr>
+ <td align="left" valign="top" width="41%">Adults<span style="color:red">*</span></td><td>
+        <input type="text" value="" onkeypress="return isNumberKey(event)" name="txtadNumber" size="24"></td>
+        
+ 
+    </tr> <tr>
+ <td align="left" valign="top" width="41%">Children<span style="color:red">*</span></td><td>
+        <input type="text" value="" onkeypress="return isNumberKey(event)" name="txtchiNumber" size="24"></td>
+        
+ 
+    </tr>
+ 
+    <tr >
+        <td align="left" valign="top" width="41%">Date (dd/mm/yyyy)</td>
+        <td width="57%">
+  <input type="text" value="" name="txtdate" size="24">
+ 
+ 
+</select></td>
+        
+ 
+    </tr>
+    <tr>
+        <td align="left" valign="top" width="41%">Email<span style="color:red">*</span></td>
+        <td width="57%">
+        <input type="text" value="" name="email_id" size="24"></td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">
+        <p align="center">
+        <input type="submit"  id="submit" value="  Submit" name="B4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="  Reset All   " name="B5"></td>
+    </tr>
+ 
+</table>
+</form>
+</body>
+ 
+</html>

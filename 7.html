@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="arrops.js"></script>
+<script>
+window.onload=function(){
+
+
+
+var elem=document.getElementById('donate');
+elem.addEventListener('click',function(){
+var a =prompt("Enter  your donation amount");
+if( a% 1 != 0)
+{
+alert( "donated amount :" + Math.floor(a));
+}
+else
+{
+alert( "donated amount :" +a);
+}
+}
+,true)
+
+}
+
+</script>
+</head>
+<body>
+<button id="donate">Donate</button>
+</body>
+</html>

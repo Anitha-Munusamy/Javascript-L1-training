@@ -1,0 +1,38 @@
+<html>
+<head></head>
+<body>
+
+<br/>
+<form Name="calculator">
+<table >
+<tr>
+<td colspan=4><input type=text Name="inputtxt"></td>
+</tr>
+<tr>
+<td><input type=button value="0" onclick="calculator.inputtxt.value+='0'"></td>
+<td><input type=button value="1" onclick="calculator.inputtxt.value+='1'"></td>
+<td><input type=button value="2" onclick="calculator.inputtxt.value+='2'"></td>
+<td><input type=button value="+" onclick="calculator.inputtxt.value+='+'"></td>
+</tr>
+<tr>
+<td><input type=button value="3" onclick="calculator.inputtxt.value+='3'"></td>
+<td><input type=button value="4" onclick="calculator.inputtxt.value+='4'"></td>
+<td><input type=button value="5" onclick="calculator.inputtxt.value+='5'"></td>
+<td><input type=button value="-" onclick="calculator.inputtxt.value+='-'"></td>
+</tr>
+<tr>
+<td><input type=button value="6" onclick="calculator.inputtxt.value+='6'"></td>
+<td><input type=button value="7" onclick="calculator.inputtxt.value+='7'"></td>
+<td><input type=button value="8" onclick="calculator.inputtxt.value+='8'"></td>
+<td><input type=button value="x" onclick="calculator.inputtxt.value+='*'"></td>
+</tr>
+<tr>
+<td><input type=button value="9" onclick="calculator.inputtxt.value+='9'"></td>
+<td><input type=button value="C" onclick="calculator.inputtxt.value=''"></td>
+<td><input type=button value="=" onclick="calculator.inputtxt.value=eval(calculator.inputtxt.value)"></td>
+<td><input type=button value="/" onclick="calculator.inputtxt.value+='/'"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

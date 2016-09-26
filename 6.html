@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<script>
+window.onload=function(){
+function change(){
+var a =prompt("Enter Background color");
+var b = prompt("Enter Foregroundcolor");
+
+document.body.style.backgroundColor=a;
+document.body.style.color=b;
+
+setTimeout(function(){confirmbeforecloe();},1000);
+}
+
+function confirmbeforecloe(){
+var txt;
+var r = confirm("are you want to change again?");
+if (r == true) {
+	change();
+} else {
+return false;
+}
+}
+
+change();
+
+}
+
+</script>
+</head>
+<body style="background-color:#fff;color:#000;">
+he Lightning Design System CSS is now automatically included for Lightning Components running in the Lightning Experience and Salesforce S1 mobile application. You can also extend the SLDS template when building a standalone Lightning Application (my.app), in LC4VF, or in a component that will be used via Lightning Out. Please refer to the Lightning Platform page for information on extending the template. (We would like to discourage you from creating a static resource for any of these cases now. You will recieve the updates from SLDS naturally by extending the template.)
+</body>
+</html>
